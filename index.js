@@ -10,6 +10,7 @@ markAllAsRead.addEventListener('click', mark);
 function mark() {
     for (const bulletIcon of bulletIcons) {
         bulletIcon.style.display = 'none';
+        notificationCount.innerText = 0
       }
 }
 
