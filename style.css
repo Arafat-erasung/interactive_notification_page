@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 100%);
+  margin: 10%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: hsl(219deg, 14%, 63%);
+}
+body header {
+  margin: 0.625rem;
+}
+body header .notification-header {
+  display: flex;
+  justify-content: space-between;
+}
+body header .notification-header h3 {
+  color: #000;
+}
+body header .notification-header h3 span {
+  border: 1px solid hsl(219deg, 85%, 26%);
+  padding: 0px 4px 0 4px;
+  border-radius: 5px;
+  background-color: hsl(219deg, 85%, 26%);
+  color: hsl(0deg, 0%, 100%);
+}
+body header .notification-header button {
+  background: none;
+  border: none;
+  color: hsl(219deg, 14%, 63%);
+  font-size: 1rem;
+}
+body header .notification-header #mark:hover {
+  cursor: pointer;
+}
+body .notification-card {
+  margin: 0.625rem;
+  border-radius: 5px;
+  background-color: hsl(210deg, 60%, 98%);
+}
+body .notification-card .user-ID {
+  display: flex;
+  padding: 5px;
+}
+body .notification-card .user-ID .user-info {
+  margin-left: 0.625rem;
+}
+body .notification-card .user-ID .user-info strong {
+  color: #000;
+}
+body .notification-card .user-ID .user-info i {
+  color: hsl(1deg, 90%, 64%);
+  font-size: 10px;
+}
+body .notification-card .user-ID .user-info #activity {
+  color: hsl(219deg, 12%, 42%);
+  font-weight: 500;
+}
+body .notification-card .user-ID .user-info #group {
+  color: hsl(219deg, 85%, 26%);
+  font-weight: 800;
+}
+body .notification-card .user-ID .user-info .dm {
+  display: none;
+  border: 1px solid hsl(205deg, 33%, 90%);
+  padding: 0.938rem;
+  margin: 1.25rem;
+  border-radius: 0.25rem;
+}
+body .notification-card .user-ID img {
+  width: 50px;
+  height: 50px;
+}
+body .notification-card:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

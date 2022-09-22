@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//variables
+$primary-color1-red: hsl(1, 90%, 64%);
+$primary-color2-blue: hsl(219, 85%, 26%);
+
+$White: hsl(0, 0%, 100%);
+$Very-light-grayish-blue: hsl(210, 60%, 98%);
+$Light-grayish-blue-1: hsl(211, 68%, 94%);
+$Light-grayish-blue-2: hsl(205, 33%, 90%);
+$Grayish-blue: hsl(219, 14%, 63%);
+$Dark-grayish-blue: hsl(219, 12%, 42%);
+$Very-dark-blue: hsl(224, 21%, 14%);
+
+$primary-font: 'Plus Jakarta Sans', sans-serif;
+
+body {
+    // max-width: 375px;
+    // border: 1px solid black;
+    background-color: $White;
+    margin: 10%;
+    font-family: $primary-font;
+    color: $Grayish-blue;
+    header {
+        margin: 0.625rem;
+        .notification-header {
+            display: flex;
+            justify-content: space-between;
+
+            h3 {
+                color: #000;
+                span {
+                    border: 1px solid $primary-color2-blue;
+                    padding: 0px 4px 0 4px;
+                    border-radius: 5px;
+                    background-color: $primary-color2-blue;
+                    color: $White;
+                }
+            }
+
+            button {
+                background: none;
+                border: none;
+                color: $Grayish-blue;
+                font-size: 1rem;
+            }
+
+            #mark:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .notification-card {
+        margin: 0.625rem;
+        // border: 1px solid red;
+        border-radius: 5px;
+        background-color: $Very-light-grayish-blue;
+
+        .user-ID {
+            display: flex;
+            padding: 5px;
+
+            .user-info {
+                margin-left: 0.625rem;
+                strong {
+                 color: #000;
+                }
+                
+                i {
+                    color: $primary-color1-red;
+                    font-size: 10px;
+                }
+                
+                #activity {
+                    color: $Dark-grayish-blue;
+                    font-weight: 500;
+                }
+                #group {
+                    color: $primary-color2-blue;
+                    font-weight: 800;
+                }
+                .dm {
+                    display: none;
+                    border: 1px solid $Light-grayish-blue-2;
+                    padding: 0.938rem;
+                    margin: 1.25rem;
+                    border-radius: 0.25rem;
+                }
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    .notification-card:hover {
+        cursor: pointer;
+    }
+
+}
